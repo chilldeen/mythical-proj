@@ -1,0 +1,75 @@
+.intro {
+    padding: 10px;
+    font-family: serif;
+    background: rgb(255, 255, 255);
+    position: relative;
+}
+.intro h1 {
+    text-decoration: underline;
+    text-align: center;
+    text-shadow: 1.5px 1.5px black;
+    color: #ff0000;
+}
+.intro h2 {
+    text-align: center;
+}
+.intro a {
+    text-align: center;
+}
+.contact {
+    padding: 10px;
+    font-family: serif;
+    background: #ffffff;
+}
+.contact h2 {
+    text-shadow: 1.5px 1.5px black;
+    color: #ff0000;
+}
+.profile {
+    padding: 10px;
+    font-family: serif;
+    background: rgb(255, 255, 255);
+}
+.profile h2 {
+    text-shadow: 1.5px 1.5px black;
+    color: #ff0000
+}
+.skills {
+    padding: 10px;
+    font-family: serif;
+    background: #ffffff;
+}
+.skills h2 {
+    text-shadow: 1.5px 1.5px black;
+    color: #ff0000;
+}
+.talent {
+    padding: 20px;
+}
+.talent h3 {
+    font-style: italic;
+}
+.technical {
+    padding: 10px;
+    font-family: serif;
+    background: #ffffff;
+}
+.technical h2 {
+    text-shadow: 1.5px 1.5px black;
+    color: #ff0000;
+}
+.bahasa li {
+    line-height: 50px;
+}
+.edu {
+    padding: 10px;
+    font-family: serif;
+    background: rgb(255, 255, 255);
+}
+.edu h2 {
+    text-shadow: 1.5px 1.5px black;
+    color: #ff0000;
+}
+.sekolah {
+    padding: 20px;
+}
