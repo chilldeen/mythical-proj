@@ -1,3 +1,36 @@
+<?php
+if (isset($_POST["submission"])) {
+
+  $userEmail = $_POST["email"];
+  $userMessage = $_POST["pesan"];
+  $store_name = "message.json";
+  
+  if(!file_exists($store_name)) {
+    fopen("message.json", "w");  
+  }
+  $json_store = file_get_contents($store_name);
+
+  $data = array(
+     array(
+         'email' => $userEmail,
+         'message' => $userMessage
+     )
+  );
+
+  if(strlen($json_store) < 1) {
+    $json_data = json_encode($data);
+  }else {
+    $json_data = json_decode($json_store);
+    array_push($json_data, ["email" => $userEmail, "message" => $userMessage]);
+    $json_data = json_encode($json_data);
+  }
+  $stored = file_put_contents('message.json', $json_data, LOCK_EX);
+  if($stored) {
+    echo "<script type='text/javascript'>alert('Pesan terkirim');</script>";
+  }
+}
+?>
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -43,25 +76,32 @@
                     <button>Education</button>
                 </a>
             </div>
-        </div><hr>
-
+        </div>
+ 
         <div id="mail">
             <button class="open-button" onclick="openForm()">Contact me</button>
             <div class="form-popup" id="myForm">
                 <form action="index.php" class="form-container" method="post">
-                    <h1>Mail me</h1>
+                    <h2>Message me</h2>
                     <input type="hidden" id="submission" name="submission" />
                     <label for="email"><b>Email</b></label>
                     <input type="text" placeholder="Enter Email" name="email" required />
 
-                    <label for="msg"><b>Message</b></label>
-                    <textarea class="msg" id="msg" name="msg" rows="4" cols="50" placeholder="Type here"></textarea>
+                    <label for="pesan"><b>Message</b></label>
+                    <textarea class="pesan" id="pesan" name="pesan" rows="4" cols="50" placeholder="Type here"></textarea>
 
                     <button type="submit" class="btn">Send</button>
                     <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
             </div>
         </div>
-        <hr>
+
+        <div id="footer">
+            <hr>
+            <div class="foot">
+                <p>Contact me &mdash; <a href="mailto:al.4deen@gmail.com">al.4deen@gmail.com</a> &mdash; +62 838 4828 3838</p>
+            </div>
+            <hr>
+        </div>
     </body>
     <script src="script.js"></script>
 </html>
