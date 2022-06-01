@@ -1,47 +1,107 @@
+body {
+    background-image: url(macos-bigsur.jpeg);
+    background-position: center;
+    padding-top: 50px;
+}
+
+/*whole body*/
+#main {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+/*intro*/
 .intro {
     padding: 10px;
     font-family: serif;
-    background: rgb(255, 255, 255);
     position: relative;
 }
 .intro h1 {
-    text-decoration: underline;
     text-align: center;
-    text-shadow: 1.5px 1.5px black;
-    color: #ff0000;
+    text-shadow: 1.5px 1.5px rgb(74, 31, 116);
+    color: #ffffff;
 }
 .intro h2 {
     text-align: center;
+    color: #ffffff;
+}
+.welcome h3 {
+    text-align: center;
+    color: #ffffff;
 }
 .intro a {
     text-align: center;
 }
+
+/*contact*/
+.contact a:link {
+    color: #ffffff;
+}
+.contact a:visited {
+    color: rgb(255, 255, 255);
+}
 .contact {
     padding: 10px;
     font-family: serif;
-    background: #ffffff;
+    text-align: center;
 }
 .contact h2 {
     text-shadow: 1.5px 1.5px black;
-    color: #ff0000;
+    color: #ffffff;
+    text-decoration: underline;
+}
+.contact h3 {
+    color: #ffffff;
+}
+.contact button {
+    padding: 10px 30px;
+}
+
+/*profile*/
+.profile a:link {
+    color: #ffffff;
+}
+.profile a:visited {
+    color: rgb(255, 255, 255);
 }
 .profile {
     padding: 10px;
     font-family: serif;
-    background: rgb(255, 255, 255);
+    text-align: center;
 }
 .profile h2 {
     text-shadow: 1.5px 1.5px black;
-    color: #ff0000
+    color: #ffffff;
+    text-decoration: underline;
+}
+.profile p {
+    color: #ffffff;
+}
+.profile button {
+    padding: 10px 33px;
+}
+
+/*skills*/
+.skills a:link {
+    color: #ffffff;
+}
+.skills a:visited {
+    color: rgb(255, 255, 255);
 }
 .skills {
     padding: 10px;
     font-family: serif;
-    background: #ffffff;
+    text-align: center;
 }
 .skills h2 {
     text-shadow: 1.5px 1.5px black;
-    color: #ff0000;
+    color: #ffffff;
+    text-decoration: underline;
+}
+.skills h3 {
+    color: #ffffff;
+}
+.skills p {
+    color: #ffffff;
 }
 .talent {
     padding: 20px;
@@ -49,27 +109,76 @@
 .talent h3 {
     font-style: italic;
 }
+.skills button {
+    padding: 10px 37px;
+}
+
+/*technical*/
+.technical a:link {
+    color: #ffffff;
+}
+.technical a:visited {
+    color: rgb(255, 255, 255);
+}
 .technical {
     padding: 10px;
     font-family: serif;
-    background: #ffffff;
+    text-align: center;
 }
 .technical h2 {
     text-shadow: 1.5px 1.5px black;
-    color: #ff0000;
+    color: #ffffff;
+    text-decoration: underline;
+}
+.technical ul {
+    color: #ffffff;
 }
 .bahasa li {
     line-height: 50px;
 }
+.technical button {
+    padding: 10px 25px;
+}
+
+/*edu*/
+.edu a:link {
+    color: #ffffff;
+}
+.edu a:visited {
+    color: rgb(255, 255, 255);
+}
 .edu {
     padding: 10px;
     font-family: serif;
-    background: rgb(255, 255, 255);
+    text-align: center;
 }
 .edu h2 {
     text-shadow: 1.5px 1.5px black;
-    color: #ff0000;
+    color: #ffffff;
+    text-decoration: underline;
+}
+.edu h3 {
+    color: #ffffff;
+}
+.edu p {
+    color: #ffffff;
 }
 .sekolah {
     padding: 20px;
+}
+.edu button {
+    padding: 10px 23px;
+}
+
+/*foot*/
+.foot p {
+    color: #ffffff;
+    font-family: serif;
+    text-align: center;
+}
+.foot a:link {
+    color: #ffffff;
+}
+.foot a:visited {
+    color: #ffffff;
 }
